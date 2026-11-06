@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo · TS music world</title>
+    <link rel="stylesheet" href="estilos/general.css">
+    <link rel="stylesheet" href="estilos/tarjetas.css">
+    <link rel="stylesheet" href="estilos/catalogo.css">
+</head>
+<body>
+
+<header class="encabezado">
+    <div class="logo_nombre">
+        <img src="imagenes/vinilo.png" class="logo" alt="Logo de TS music world">
+        <div class="nombre">
+            <h2 class="ts">TS</h2>
+            <h2 class="music-world">Music World</h2>
+        </div>
+    </div>
+
+    <nav class="enlaces">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="separador">-</li>
+            <li><a href="catalogo.html" class="activo">Catálogo</a></li>
+        </ul>
+    </nav>
+
+    <a href="#" class="carrito"><img src="imagenes/iconos/carrito.svg" class="icono" alt="">Carrito (0)</a>
+</header>
+
+<nav class="secciones">
+    <ul class="secciones-botones">
+        <li><a href="catalogo.html"><img src="imagenes/iconos/estrella.svg" class="icono" alt="">ERAS<img src="imagenes/iconos/estrella.svg" class="icono" alt=""></a></li>
+        <li><a href="catalogo.html"><img src="imagenes/iconos/musica.svg" class="icono" alt="">ÁLBUMES<img src="imagenes/iconos/musica.svg" class="icono" alt=""></a></li>
+        <li><a href="catalogo.html"><img src="imagenes/iconos/disco.svg" class="icono" alt="">GÉNEROS<img src="imagenes/iconos/disco.svg" class="icono" alt=""></a></li>
+        <li><a href="catalogo.html"><img src="imagenes/iconos/personas.svg" class="icono" alt="">COLLABS<img src="imagenes/iconos/personas.svg" class="icono" alt=""></a></li>
+        <li><a href="index.html#novedades">¡ NOVEDADES !</a></li>
+    </ul>
+</nav>
+
+<main class="contenido">
+
+    <aside class="filtros">
+        <h3>Era</h3>
+            <label><input type="checkbox" name="era"> Debut</label>
+            <label><input type="checkbox" name="era"> Fearless</label>
+            <label><input type="checkbox" name="era"> Speak Now</label>
+            <label><input type="checkbox" name="era"> Red</label>
+            <label><input type="checkbox" name="era"> 1989</label>
+            <label><input type="checkbox" name="era"> Reputation</label>
+            <label><input type="checkbox" name="era"> Lover</label>
+            <label><input type="checkbox" name="era"> Folklore</label>
+            <label><input type="checkbox" name="era"> Evermore</label>
+            <label><input type="checkbox" name="era"> Midnights</label>
+            <label><input type="checkbox" name="era"> TTPD</label>
+            <label><input type="checkbox" name="era"> Showgirl</label>
+
+        <h3>Formato</h3>
+            <label><input type="checkbox" name="formato"> CD</label>
+            <label><input type="checkbox" name="formato"> Vinilo</label>
+
+        <h3>Género</h3>
+            <label><input type="checkbox" name="genero"> Country</label>
+            <label><input type="checkbox" name="genero"> Pop</label>
+            <label><input type="checkbox" name="genero"> Pop rock</label>
+            <label><input type="checkbox" name="genero"> Synth-pop</label>
+            <label><input type="checkbox" name="genero"> Indie folk</label>
+
+        <h3>Collab</h3>
+            <label><input type="checkbox" name="collab"> Solo con collabs</label>
+
+        <h3>Novedades</h3>
+            <label><input type="checkbox" name="novedad"> Solo novedades</label>
+    </aside>
+
+    <section class="catalogo">
+        <h2 class="titulo-seccion">Catálogo general</h2>
+        <input type="search" class="buscador" placeholder="Buscar álbum, era o formato...">
+
+        <div class="rejilla">
+            <article class="tarjeta">
+                <div class="tarjeta-foto">
+                    <img src="imagenes/productos/vinilo-debut.jpg" alt="Vinilo Taylor Swift (Debut)">
+                    <span class="etiqueta">Vinilo</span>
+                    <div class="tarjeta-info">
+                        <div>
+                            <h3>Taylor Swift (Debut)</h3>
+                            <p class="precio">$799 MXN</p>
+                        </div>
+                        <a href="#" class="boton-anadir">Añadir al carrito</a>
+                    </div>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjeta-foto">
+                    <img src="imagenes/productos/cd-debut.jpg" alt="CD Taylor Swift (Debut)">
+                    <span class="etiqueta">CD</span>
+                    <div class="tarjeta-info">
+                        <div>
+                            <h3>Taylor Swift (Debut)</h3>
+                            <p class="precio">$299 MXN</p>
+                        </div>
+                        <a href="#" class="boton-anadir">Añadir al carrito</a>
+                    </div>
+                </div>
+            </article>
+            <article class="tarjeta tercera">
+                <div class="tarjeta-foto">
+                    <img src="imagenes/productos/vinilo-fearless.jpg" alt="Vinilo Fearless (Taylor's Version)">
+                    <span class="etiqueta">Vinilo</span>
+                    <div class="tarjeta-info">
+                        <div>
+                            <h3>Fearless (TV)</h3>
+                            <p class="precio">$849 MXN</p>
+                        </div>
+                        <a href="#" class="boton-anadir">Añadir al carrito</a>
+                    </div>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjeta-foto">
+                    <img src="imagenes/productos/cd-fearless.jpg" alt="CD Fearless (Taylor's Version)">
+                    <span class="etiqueta">CD</span>
+                    <div class="tarjeta-info">
+                        <div>
+                            <h3>Fearless (TV)</h3>
+                            <p class="precio">$329 MXN</p>
+                        </div>
+                        <a href="#" class="boton-anadir">Añadir al carrito</a>
+                    </div>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjeta-foto">
+                    <img src="imagenes/productos/vinilo-speak-now-original.jpg" alt="Vinilo Speak Now">
+                    <span class="etiqueta">Vinilo</span>
+                    <div class="tarjeta-info">
+                        <div>
+                            <h3>Speak Now</h3>
+                            <p class="precio">$799 MXN</p>
+                        </div>
+                        <a href="#" class="boton-anadir">Añadir al carrito</a>
+                    </div>
+                </div>
+            </article>
+            <article class="tarjeta tercera">
+                <div class="tarjeta-foto">
+                    <img src="imagenes/productos/cd-speak-now-original.jpg" alt="CD Speak Now">
+                    <span class="etiqueta">CD</span>
+                    <div class="tarjeta-info">
+                        <div>
+                            <h3>Speak Now</h3>
+                            <p class="precio">$299 MXN</p>
+                        </div>
+                        <a href="#" class="boton-anadir">Añadir al carrito</a>
+                    </div>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjeta-foto">
+                    <img src="imagenes/productos/vinilo-speak-now.jpg" alt="Vinilo Speak Now (Taylor's Version)">
+                    <span class="etiqueta">Vinilo</span>
+                    <div class="tarjeta-info">
+                        <div>
+                            <h3>Speak Now (TV)</h3>
+                            <p class="precio">$899 MXN</p>
+                        </div>
+                        <a href="#" class="boton-anadir">Añadir al carrito</a>
+                    </div>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjeta-foto">
+                    <img src="imagenes/productos/cd-speak-now.jpg" alt="CD Speak Now (Taylor's Version)">
+                    <span class="etiqueta">CD</span>
+                    <div class="tarjeta-info">
+                        <div>
+                            <h3>Speak Now (TV)</h3>
+                            <p class="precio">$349 MXN</p>
+                        </div>
+                        <a href="#" class="boton-anadir">Añadir al carrito</a>
+                    </div>
+                </div>
+            </article>
+            <article class="tarjeta tercera">
+                <div class="tarjeta-foto">
+                    <img src="imagenes/productos/vinilo-red-original.jpg" alt="Vinilo Red">
+                    <span class="etiqueta">Vinilo</span>
+                    <div class="tarjeta-info">
+                        <div>
+                            <h3>Red</h3>
+                            <p class="precio">$799 MXN</p>
+                        </div>
+                        <a href="#" class="boton-anadir">Añadir al carrito</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <details class="ver-mas">
+            <summary>Ver más</summary>
+            <div class="rejilla">
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/cd-red-original.jpg" alt="CD Red">
+                        <span class="etiqueta">CD</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>Red</h3>
+                                <p class="precio">$299 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/vinilo-red.jpg" alt="Vinilo Red (Taylor's Version)">
+                        <span class="etiqueta">Vinilo</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>Red (TV)</h3>
+                                <p class="precio">$899 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta tercera">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/cd-red.jpg" alt="CD Red (Taylor's Version)">
+                        <span class="etiqueta">CD</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>Red (TV)</h3>
+                                <p class="precio">$349 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/vinilo-1989-original.jpg" alt="Vinilo 1989">
+                        <span class="etiqueta">Vinilo</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>1989</h3>
+                                <p class="precio">$799 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/vinilo-1989.jpg" alt="Vinilo 1989 (Taylor's Version)">
+                        <span class="etiqueta">Vinilo</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>1989 (TV)</h3>
+                                <p class="precio">$899 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta tercera">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/cd-1989.jpg" alt="CD 1989 (Taylor's Version)">
+                        <span class="etiqueta">CD</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>1989 (TV)</h3>
+                                <p class="precio">$349 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/vinilo-reputation.jpg" alt="Vinilo reputation">
+                        <span class="etiqueta">Vinilo</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>reputation</h3>
+                                <p class="precio">$799 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/cd-reputation.jpg" alt="CD reputation">
+                        <span class="etiqueta">CD</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>reputation</h3>
+                                <p class="precio">$299 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta tercera">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/vinilo-lover.jpg" alt="Vinilo Lover">
+                        <span class="etiqueta">Vinilo</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>Lover</h3>
+                                <p class="precio">$829 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/cd-lover.jpg" alt="CD Lover">
+                        <span class="etiqueta">CD</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>Lover</h3>
+                                <p class="precio">$319 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/vinilo-folklore.jpg" alt="Vinilo folklore">
+                        <span class="etiqueta">Vinilo</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>folklore</h3>
+                                <p class="precio">$849 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta tercera">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/vinilo-evermore.jpg" alt="Vinilo evermore">
+                        <span class="etiqueta">Vinilo</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>evermore</h3>
+                                <p class="precio">$849 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/vinilo-midnights.jpg" alt="Vinilo Midnights">
+                        <span class="etiqueta">Vinilo</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>Midnights</h3>
+                                <p class="precio">$869 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/cd-midnights-cafe.jpg" alt="CD Midnights, edición café">
+                        <span class="etiqueta">CD</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>Midnights (café)</h3>
+                                <p class="precio">$359 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta tercera">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/cd-midnights-vino.jpg" alt="CD Midnights, edición vino">
+                        <span class="etiqueta">CD</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>Midnights (vino)</h3>
+                                <p class="precio">$359 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/cd-midnights-verde.jpg" alt="CD Midnights, edición verde">
+                        <span class="etiqueta">CD</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>Midnights (verde)</h3>
+                                <p class="precio">$359 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/vinilo-tortured-poets.jpg" alt="Vinilo The Tortured Poets Department">
+                        <span class="etiqueta">Vinilo</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>The Tortured Poets</h3>
+                                <p class="precio">$899 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta tercera">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/vinilo-showgirl.jpg" alt="Vinilo The Life of a Showgirl">
+                        <span class="etiqueta">Vinilo</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>The Life of a Showgirl</h3>
+                                <p class="precio">$899 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/cd-showgirl.jpg" alt="CD The Life of a Showgirl">
+                        <span class="etiqueta">CD</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>The Life of a Showgirl</h3>
+                                <p class="precio">$369 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="tarjeta-foto">
+                        <img src="imagenes/productos/cd-toy-story-5.jpg" alt="CD Toy Story 5: I Knew It, I Knew You">
+                        <span class="etiqueta">CD</span>
+                        <div class="tarjeta-info">
+                            <div>
+                                <h3>Toy Story 5 · Sencillo</h3>
+                                <p class="precio">$249 MXN</p>
+                            </div>
+                            <a href="#" class="boton-anadir">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </details>
+    </section>
+
+</main>
+
+<footer class="pie">
+    <div class="pie-columna">
+        <h4>Contacto</h4>
+        <p>hola@tsmusicworld.mx</p>
+        <p>+52 669 000 0000</p>
+        <p>Lunes a viernes de 10:00 a 18:00</p>
+    </div>
+    <div class="pie-columna">
+        <h4>Tienda</h4>
+        <p>Envíos y entregas</p>
+        <p>Cambios y devoluciones</p>
+        <p>Preguntas frecuentes</p>
+    </div>
+    <div class="pie-columna">
+        <h4>Información</h4>
+        <p>Sobre nosotros</p>
+        <p>Términos y condiciones</p>
+        <p>Aviso de privacidad</p>
+    </div>
+    <div class="redes">
+        <a href="https://www.instagram.com/taylorswift/" target="_blank"><img src="imagenes/redes/icono-instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com/TaylorSwift/" target="_blank"><img src="imagenes/redes/icono-facebook.png" alt="Facebook"></a>
+        <a href="https://www.youtube.com/@TaylorSwift" target="_blank"><img src="imagenes/redes/icono-youtube.png" alt="YouTube"></a>
+        <a href="https://x.com/taylorswift13" target="_blank"><img src="imagenes/redes/icono-twitter.png" alt="X"></a>
+    </div>
+    <p class="derechos">© 2026 TS music world · Tienda de fans, no oficial. Precios de ejemplo en pesos mexicanos.</p>
+</footer>
+
+</body>
+</html>
